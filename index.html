@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fce4ec;
+        margin: 0;
+        padding: 30px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 25px;
+        background-color: #fff5f8;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #ad1457;
+      }
+
+      .form-row {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #880e4f;
+      }
+
+      .textfield {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #e8a0b8;
+        border-radius: 5px;
+      }
+
+      .checkbox-row input {
+        width: auto;
+        accent-color: #d81b60;
+      }
+
+      .Checkbox {
+        margin-left: 10px;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        padding: 9px 20px;
+        background-color: #d81b60;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #ad1457;
+      }
+
+      .target {
+        background-color: white;
+        border: 1px solid #e8a0b8;
+        min-height: 35px;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Labb 2 - Grupp 62</h1>
+
+      <!-- Input 1:Färg -->
+      <div class="form-row">
+        <label for="color">Färg:</label>
+        <input
+          type="text"
+          name="color"
+          id="color"
+          class="textfield"
+          placeholder="Ange färg"
+        />
+      </div>
+
+      <!-- Input 2: Innehåll-->
+      <div class="form-row">
+        <label for="content">Innehåll:</label>
+        <input
+          type="text"
+          name="content"
+          id="content"
+          class="textfield"
+          placeholder="Skriv något fint"
+        />
+      </div>
+
+      <!-- Input 3: Stil på box -->
+      <div class="form-row checkbox-row">
+        <label for="divStyle">Stil på box:</label>
+        <input type="checkbox" name="divStyle" id="divStyle" class="Checkbox" />
+      </div>
+
+      <button type="button" id="removeButton">Ta bort</button>
+
+      <div id="targetDiv" class="target"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
